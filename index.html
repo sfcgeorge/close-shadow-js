@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end CSS-->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+		<hgroup>
+			<h1>{ Close-Shadow-JS }</h1>
+			<h3>JavaScript generated 3D 'close' text shadows.</h3>
+			<h2>~</h2>
+			It makes flat text look positively dull.
+		</hgroup>	
+    </header>
+    <div id="main" role="main">
+		<h3>Basic Usage</h3>
+		<p>
+				<pre>
+	$('h3').closeShadow();
+				</pre>
+			</p>
+		
+		<h3 id="noMove">It doesn't have to move</h3>
+		<p>
+			<pre>
+	$('#main h3#noMove').closeShadow({
+		'follow': false
+	});
+			</pre>
+		</p>
+		
+		<h3 id="garish">Make the shadow a garish color</h3>
+		<p>
+			<pre>
+	$('#garish').closeShadow({
+		'dark-shadow': 'pink',
+		'light-shadow': '#00f2ff'
+	});
+			</pre>
+		</p>
+		
+		<h3>What were you thinking?!</h3>
+		<p>
+			I don't know, I really don't know. To me this would look right at home on a 90s website, which means it's ugly. If you can do anything with it that doesn't look awful I'd love to see it @sibrow.
+		</p>
+		
+		<h3>Bugs? Feature requests?</h3>
+		<p>
+			Fork it fix it. I'm struggling to think of a good use for this right now, so I'll leave it up to you to fix any bugs or add features.
+		</p>
+		
+		<h1 id="face">:-)</h1>
+    </div>
+    <footer>
+
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <script defer src="js/mylibs/close-shadow.jquery.js"></script>
+  
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
